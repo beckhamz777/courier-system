@@ -1,0 +1,142 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="EDgBvBbdY4JXHumzDhaf">
+    <mxGraphModel dx="1579" dy="607" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1680" pageHeight="700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="laneClient" parent="1" style="swimlane;horizontal=0;startSize=110;fillColor=#f5f5f5;html=1;" value="CLIENT" vertex="1">
+          <mxGeometry height="150" width="1680" as="geometry" />
+        </mxCell>
+        <mxCell id="clientLogin" parent="laneClient" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Login / Dashboard" vertex="1">
+          <mxGeometry height="60" width="140" x="120" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="submitRequest" parent="laneClient" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Submit Request&lt;br&gt;Items, quantity, address, details" vertex="1">
+          <mxGeometry height="60" width="140" x="300" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="trackProgress" parent="laneClient" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Track Request&lt;br&gt;View status and courier" vertex="1">
+          <mxGeometry height="60" width="140" x="1020" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="clientDelivered" parent="laneClient" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Status: DELIVERED&lt;br&gt;View proof of delivery" vertex="1">
+          <mxGeometry height="60" width="140" x="1380" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="laneOperator" parent="1" style="swimlane;horizontal=0;startSize=110;fillColor=#e8f4f8;html=1;" value="OPERATOR" vertex="1">
+          <mxGeometry height="150" width="1680" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="receiveRequest" parent="laneOperator" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Receive Request&lt;br&gt;Status: PENDING" vertex="1">
+          <mxGeometry height="60" width="140" x="480" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="review" parent="laneOperator" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Review Request" vertex="1">
+          <mxGeometry height="60" width="140" x="660" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="approvalDecision" parent="laneOperator" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Approve?" vertex="1">
+          <mxGeometry height="80" width="140" x="840" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="prepareItems" parent="laneOperator" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Prepare / Source&lt;br&gt;Requested Items&lt;br&gt;Status: PREPARING" vertex="1">
+          <mxGeometry height="60" width="140" x="1100" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="assignCourier" parent="laneOperator" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Assign Delivery&lt;br&gt;to Courier&lt;br&gt;Status: ASSIGNED" vertex="1">
+          <mxGeometry height="60" width="140" x="1260" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="rejectRequest" parent="laneOperator" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Reject Request&lt;br&gt;Record reason" vertex="1">
+          <mxGeometry height="60" width="140" x="840" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="laneCourier" parent="1" style="swimlane;horizontal=0;startSize=110;fillColor=#fff0e6;html=1;" value="COURIER" vertex="1">
+          <mxGeometry height="150" width="1680" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="courierAssignment" parent="laneCourier" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Receive Assignment" vertex="1">
+          <mxGeometry height="60" width="140" x="1200" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="pickup" parent="laneCourier" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Pick Up Package&lt;br&gt;Status: PICKED_UP" vertex="1">
+          <mxGeometry height="60" width="140" x="1380" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="inTransit" parent="laneCourier" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="In Transit&lt;br&gt;GPS Tracking&lt;br&gt;Status: IN_TRANSIT" vertex="1">
+          <mxGeometry height="60" width="140" x="1560" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="deliver" parent="laneCourier" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Deliver to Client&lt;br&gt;Capture recipient name, NIN, POD photo" vertex="1">
+          <mxGeometry height="60" width="140" x="1560" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="laneSystem" parent="1" style="swimlane;horizontal=0;startSize=110;fillColor=#e8f5e9;html=1;" value="SYSTEM &amp; NOTIFICATIONS" vertex="1">
+          <mxGeometry height="150" width="1680" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="requestCreated" parent="laneSystem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Create Request&lt;br&gt;Status: PENDING" vertex="1">
+          <mxGeometry height="60" width="140" x="300" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="notifyOperator" parent="laneSystem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Notify Operator&lt;br&gt;New request received" vertex="1">
+          <mxGeometry height="60" width="140" x="480" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="notifyRejected" parent="laneSystem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Notify Client&lt;br&gt;Status: REJECTED" vertex="1">
+          <mxGeometry height="60" width="140" x="840" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="updateApproved" parent="laneSystem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Update Status:&lt;br&gt;APPROVED" vertex="1">
+          <mxGeometry height="60" width="140" x="1020" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="completeDelivery" parent="laneSystem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Record delivered_at&lt;br&gt;Status: DELIVERED" vertex="1">
+          <mxGeometry height="60" width="140" x="1380" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="notifyBoth" parent="laneSystem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Notify Client &amp; Operator&lt;br&gt;Delivery complete" vertex="1">
+          <mxGeometry height="60" width="140" x="1560" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="clientLogin" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="submitRequest">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="submitRequest" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="requestCreated">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="requestCreated" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="notifyOperator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="notifyOperator" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="receiveRequest">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="receiveRequest" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="review">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="review" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="approvalDecision">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="approvalDecision" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="rejectRequest" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="rejectRequest" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="notifyRejected">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="notifyRejected" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="trackProgress">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="approvalDecision" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="updateApproved" value="Yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="updateApproved" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="prepareItems">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="prepareItems" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="assignCourier">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="assignCourier" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="courierAssignment">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="courierAssignment" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="pickup">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="pickup" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="inTransit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="inTransit" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="deliver">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="deliver" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="completeDelivery">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="completeDelivery" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="notifyBoth">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="notifyBoth" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="clientDelivered">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" source="trackProgress" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;endArrow=classic;" target="clientDelivered">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
